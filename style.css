@@ -41,6 +41,10 @@ body {
   color: rgb(242, 30, 119);
 }
 
+#start_game_btn:hover {
+  background-color: rgb(210, 123, 138);
+}
+
 #input_number {
   width: 150px;
   height: 50px;

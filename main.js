@@ -8,13 +8,15 @@ start_game_btn.addEventListener("click", () => {
   console.log(random_number);
 });
 
+start_game_btn.classList.add("start_game_btn:hover");
+
 const check_guess_btn = document.getElementById("check_guess_btn");
 const user_guess_number = document.getElementById("input_number");
 
 let new_p = document.createElement("p");
 new_p.textContent = " ";
 new_p.style.color = "white";
-new_p.style.marginLeft = "42%";
+new_p.style.marginLeft = "36%";
 new_p.style.fontSize = "35px";
 main_section.appendChild(new_p);
 
@@ -37,6 +39,8 @@ check_guess_btn.addEventListener("click", () => {
   } else if (Number(user_guess_number.value) === random_number) {
     // const success = document.createElement("p");
     new_p.textContent = "YOU MADE IT";
+    new_p.style.marginLeft = "40%";
+    new_p.style.color = "green";
     // main_section.appendChild(success);
   }
 });
